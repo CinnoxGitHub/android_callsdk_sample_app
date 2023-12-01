@@ -17,11 +17,11 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <meta-data
-            android:name="com.m800.provision.edge_server_hpkp"
-            android:value="sha256/cQAIlfXa2KiFnW/q4fPdJPeJSBNnhuTY0xRHXdsY7G4=" />
-        <meta-data
             android:name="com.m800.provision.edge_server"
             android:value="@string/edge_server" />
+        <meta-data
+            android:name="com.m800.provision.edge_server_hpkp"
+            android:value="@string/edge_server_hpkp" />
         <meta-data
             android:name="com.m800.provision.mqtt_server"
             android:value="@string/mqtt_server" />

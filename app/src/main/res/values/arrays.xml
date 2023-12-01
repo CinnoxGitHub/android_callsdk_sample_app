@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="csd_list">
-        <item>@string/csd1</item>
+        <item>https://pd-csd.cx.cinnox.com/v1/m800-global-csd-list</item>
+        <item>https://pd-csd.cx.cinnox.cn/v1/m800-global-csd-list</item>
     </string-array>
 </resources>

@@ -1,25 +1,7 @@
 <resources>
-    <string name="service_id">@string/tb_service_id</string>
-    <string name="edge_server">@string/tb_edge_server</string>
-    <string name="mqtt_server">@string/tb_mqtt_server</string>
-    <string name="csd1">@string/tb_testing_csd1</string>
-
-    <!-- Tb env -->
-    <string name="tb_service_id">210b.cx-tb.cinnox.com</string>
-    <string name="tb_edge_server">https://hktb-ed.cx-tb.cinnox.com</string>
-    <string name="tb_mqtt_server">ssl://hktb-mqsl01.cx-tb.cinnox.com:1883</string>
-    <string name="tb_testing_csd1">https://tb-csd.cx-tb.cinnox.com/v1/m800-global-csd-list</string>
-
-    <string name="tb_testing_account_1">liuming@m800.com</string>
-    <string name="tb_testing_password_1">Maaii2016</string>
-    <string name="tb_testing_account_2">liuming@maaii.com</string>
-    <string name="tb_testing_password_2">Maaii2016</string>
-    <string name="tb_testing_account_3">wisenight2222@gmail.com</string>
-    <string name="tb_testing_password_3">Maaii2016</string>
-
-    <string name="tb_testing_callee_eid_1">lJJ12wUj.ggeYPlCuBQsS.f511.03000000.MkAKJ1sFo8dkH3WK</string>
-    <string name="tb_testing_callee_eid_2">lJJ12wUj.5vW4mEX6vOlh.b1b2.03000000.s9R0bkTGc4WIb1ZK</string>
-    <string name="tb_testing_callee_eid_3">5rftlwVg.-j2ohGp-2KAb.3635.02000000.8toKsNaO1_WVhqtp</string>
+    <string name="edge_server">https://edge-prod-hk-02.cx.cinnox.com</string>
+    <string name="edge_server_hpkp">sha256/cQAIlfXa2KiFnW/q4fPdJPeJSBNnhuTY0xRHXdsY7G4=</string>
+    <string name="mqtt_server">ssl://hkpd-mqsl01.cx.cinnox.com:1883</string>
 
     <string name="app_name">M800CallSDK Demo</string>
     <string name="login">Login</string>

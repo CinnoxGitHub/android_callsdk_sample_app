@@ -14,12 +14,12 @@ import com.m800.sdk.call.demo.utils.CustomManager
 import com.m800.sdk.call.demo.utils.PermissionHelper
 import kotlinx.coroutines.launch
 
-const val SERVICE_ID = "210b.cx-tb.cinnox.com"
-const val USER_ACCOUNT = "liuming@m800.com"
-const val USER_PASSWORD = "Maaii2016"
-const val CALLEE_EID = "lJJ12wUj.5vW4mEX6vOlh.b1b2.03000000.s9R0bkTGc4WIb1ZK" // lJJ12wUj.ibR7EHmmVr3i.dae7.03000000.iWtJ-K2Ywr1MkRxT
-const val CALLEE_PHONE_NUMBER = "+886800818001" // +864009203827
-const val CLI_NUMBER = "+85234721737"
+const val SERVICE_ID = "*****.cinnox.com" // input your service id
+const val USER_ACCOUNT = "email" // input your user account
+const val USER_PASSWORD = "password" // input your user password
+const val CALLEE_EID = "eid" // input your callee eid
+const val CALLEE_PHONE_NUMBER = "phone number" // input your callee phone number
+const val CLI_NUMBER = "cli number" // input your cli number
 
 class MainActivity: AppCompatActivity() {
 
