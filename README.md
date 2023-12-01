@@ -2,11 +2,26 @@
 Cinnox Call SDK is a software development kit (SDK) that allows you to integrate Cinnox's real-time voice communication features into your Android application. This guide will help you get started with the Cinnox Call SDK by walking you through the installation process and showing you how to make a simple voice call.
 
 # Installation
-To use Cinnox Call SDK, you need to add the following dependencies to your app-level build.gradle file:
-
-```gradle
-implementation 'com.m800.sdk:call:3.12.0.600'
+1. Add the following code snippet inside the repositories block to the app/build.gradle section:
+   
+```kotlin
+buildscript {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
+This will include the JitPack repository in your project, allowing you to fetch dependencies from it.
+
+2. Add the following code snippet inside the dependencies block:
+
+```kotlin
+implementation 'com.github.CinnoxGitHub:android_callsdk:4.2.2.631'
+```
+This line specifies the dependency on the android_callsdk library from the JitPack repository. 
+
+Sync your project with the Gradle files by clicking on the "Sync Now" button or selecting File > Sync Project with Gradle Files.
+Congratulations! You have successfully updated the dependencies using JitPack. The android_callsdk library is now included in your Android project.
 
 # Initialization
 Before you can use the Cinnox Call SDK, you need to initialize it by calling the `CinnoxCore.initialize()` method with your app's context and your Cinnox service ID:
