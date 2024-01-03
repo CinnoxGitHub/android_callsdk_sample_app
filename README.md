@@ -1,6 +1,8 @@
 # Cinnox Call SDK Quick Start Guide
 Cinnox Call SDK is a software development kit (SDK) that allows you to integrate Cinnox's real-time voice communication features into your Android application. This guide will help you get started with the Cinnox Call SDK by walking you through the installation process and showing you how to make a simple voice call.
 
+<img src="https://github.com/CinnoxGitHub/android_callsdk_sample_app/blob/main/Demo.gif" width="200">
+
 # Installation
 1. Add the following code snippet inside the repositories block to the app/build.gradle section:
    
