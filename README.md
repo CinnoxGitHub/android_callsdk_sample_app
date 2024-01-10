@@ -18,7 +18,7 @@ This will include the JitPack repository in your project, allowing you to fetch 
 2. Add the following code snippet inside the dependencies block:
 
 ```kotlin
-implementation 'com.github.CinnoxGitHub:android_callsdk:4.2.2.631'
+implementation 'com.github.CinnoxGitHub:android_callsdk:4.3.0.641'
 ```
 This line specifies the dependency on the android_callsdk library from the JitPack repository. 
 
