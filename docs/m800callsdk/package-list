@@ -46,6 +46,7 @@ $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getTerminatedReason/#/PointingT
 $dokka.location:com.m800.sdk.call/CinnoxCallManager///PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/index.html
 $dokka.location:com.m800.sdk.call/CinnoxCallManager/getActiveCallSession/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/get-active-call-session.html
 $dokka.location:com.m800.sdk.call/CinnoxCallManager/getAudioController/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/get-audio-controller.html
+$dokka.location:com.m800.sdk.call/CinnoxCallManager/getTrunkOutDisplayNumbers/#com.m800.sdk.core.staff.CinnoxCallerIdType?#CinnoxApiResultCallback<List<CinnoxCallerId>>[kotlin.collections.List[com.m800.sdk.core.call.CinnoxCallerId]]/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/get-trunk-out-display-numbers.html
 $dokka.location:com.m800.sdk.call/CinnoxCallManager/makeCall/#com.m800.sdk.call.CinnoxCallOptions/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/make-call.html
 $dokka.location:com.m800.sdk.call/CinnoxCallManager/registerCallManagerListener/#com.m800.sdk.call.CinnoxCallManagerListener/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/register-call-manager-listener.html
 $dokka.location:com.m800.sdk.call/CinnoxCallManager/setAutoPlayRingtone/#kotlin.Boolean/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/set-auto-play-ringtone.html
