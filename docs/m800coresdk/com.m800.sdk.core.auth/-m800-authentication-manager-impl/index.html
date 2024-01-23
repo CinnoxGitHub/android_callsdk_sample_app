@@ -1,0 +1,682 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>M800AuthenticationManagerImpl</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            M800CallSDK-Android
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":m800coresdk:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="m800coresdk::com.m800.sdk.core.auth/M800AuthenticationManagerImpl///PointingToDeclaration//253497525">
+  <div class="breadcrumbs"><a href="../../index.html">m800coresdk</a><span class="delimiter">/</span><a href="../index.html">com.m800.sdk.core.auth</a><span class="delimiter">/</span><span class="current">M800AuthenticationManagerImpl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>M800Authentication</span><wbr><span>Manager</span><wbr><span><span>Impl</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">M800AuthenticationManagerImpl</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>coreSdk<span class="token operator">: </span><span data-unresolved-link="com.m800.sdk.core.internal/M800Base///PointingToDeclaration/">M800Base</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sharedEventBus<span class="token operator">: </span><span data-unresolved-link="com.m800.sdk.common.eventbus/M800EventBus///PointingToDeclaration/">M800EventBus</span></span></span><span class="token punctuation">)</span> : <a href="../../../m800coresdk/com.m800.sdk.core.auth/-m800-authentication-manager/index.html">M800AuthenticationManager</a>, <a href="../../../m800coresdk/com.m800.sdk.core.auth/-m800-internal-authentication-manager/index.html">M800InternalAuthenticationManager</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-175158429%2FConstructors%2F253497525" anchor-label="M800AuthenticationManagerImpl" id="-175158429%2FConstructors%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m800-authentication-manager-impl.html"><span>M800Authentication</span><wbr><span>Manager</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-175158429%2FConstructors%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">coreSdk<span class="token operator">: </span><span data-unresolved-link="com.m800.sdk.core.internal/M800Base///PointingToDeclaration/">M800Base</span><span class="token punctuation">, </span></span><span class="parameter ">sharedEventBus<span class="token operator">: </span><span data-unresolved-link="com.m800.sdk.common.eventbus/M800EventBus///PointingToDeclaration/">M800EventBus</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-493873191%2FClasslikes%2F253497525" anchor-label="SavedToken" id="-493873191%2FClasslikes%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-saved-token/index.html"><span>Saved</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-493873191%2FClasslikes%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-saved-token/index.html">SavedToken</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>accessToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>refreshToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>accExpireDate<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>refExpireDate<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>serviceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>eid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>isAnonymous<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1122246402%2FClasslikes%2F253497525" anchor-label="Token" id="-1122246402%2FClasslikes%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-token/index.html"><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1122246402%2FClasslikes%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-token/index.html">Token</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>token<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>expireDate<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.m800.sdk.core.internal.network/JsonObjectable///PointingToDeclaration/">JsonObjectable</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="665476361%2FProperties%2F253497525" anchor-label="coreSdk" id="665476361%2FProperties%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="core-sdk.html"><span>core</span><wbr><span><span>Sdk</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="665476361%2FProperties%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="core-sdk.html">coreSdk</a><span class="token operator">: </span><span data-unresolved-link="com.m800.sdk.core.internal/M800Base///PointingToDeclaration/">M800Base</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1909699029%2FProperties%2F253497525" anchor-label="sharedEventBus" id="-1909699029%2FProperties%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shared-event-bus.html"><span>shared</span><wbr><span>Event</span><wbr><span><span>Bus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1909699029%2FProperties%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="shared-event-bus.html">sharedEventBus</a><span class="token operator">: </span><span data-unresolved-link="com.m800.sdk.common.eventbus/M800EventBus///PointingToDeclaration/">M800EventBus</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1339619236%2FFunctions%2F253497525" anchor-label="accessNotAllow" id="-1339619236%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="access-not-allow.html"><span>access</span><wbr><span>Not</span><wbr><span><span>Allow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1339619236%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="access-not-allow.html"><span class="token function">accessNotAllow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-718333547%2FFunctions%2F253497525" anchor-label="accessNotAllowBeforeAuth" id="-718333547%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="access-not-allow-before-auth.html"><span>access</span><wbr><span>Not</span><wbr><span>Allow</span><wbr><span>Before</span><wbr><span><span>Auth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-718333547%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="access-not-allow-before-auth.html"><span class="token function">accessNotAllowBeforeAuth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1199647314%2FFunctions%2F253497525" anchor-label="bindEIdWindowsAd" id="1199647314%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bind-e-id-windows-ad.html"><span>bind</span><wbr><span>EId</span><wbr><span>Windows</span><wbr><span><span>Ad</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1199647314%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="bind-e-id-windows-ad.html"><span class="token function">bindEIdWindowsAd</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">authCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">bind EId to Windows AD</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1654731076%2FFunctions%2F253497525" anchor-label="changeLoginVisitor" id="1654731076%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="change-login-visitor.html"><span>change</span><wbr><span>Login</span><wbr><span><span>Visitor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1654731076%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="change-login-visitor.html"><span class="token function">changeLoginVisitor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">visitorEid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">change Login Visitor</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="189260607%2FFunctions%2F253497525" anchor-label="changePassword" id="189260607%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="change-password.html"><span>change</span><wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="189260607%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="change-password.html"><span class="token function">changePassword</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">oldPassword<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">newPassword<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Change password</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-412993733%2FFunctions%2F253497525" anchor-label="checkLicenseCache" id="-412993733%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-license-cache.html"><span>check</span><wbr><span>License</span><wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-412993733%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="check-license-cache.html"><span class="token function">checkLicenseCache</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">get License cache</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2098866185%2FFunctions%2F253497525" anchor-label="getAccessToken" id="-2098866185%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-access-token.html"><span>get</span><wbr><span>Access</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2098866185%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-access-token.html"><span class="token function">getAccessToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="900279528%2FFunctions%2F253497525" anchor-label="getCurrentUser" id="900279528%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-user.html"><span>get</span><wbr><span>Current</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="900279528%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-current-user.html"><span class="token function">getCurrentUser</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-cinnox-user/index.html">CinnoxUser</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get current login user</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1640381011%2FFunctions%2F253497525" anchor-label="getPasswordExpireTime" id="1640381011%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-password-expire-time.html"><span>get</span><wbr><span>Password</span><wbr><span>Expire</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1640381011%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-password-expire-time.html"><span class="token function">getPasswordExpireTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">get password expire Time</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="371321181%2FFunctions%2F253497525" anchor-label="getVerificationCode" id="371321181%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-verification-code.html"><span>get</span><wbr><span>Verification</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="371321181%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-verification-code.html"><span class="token function">getVerificationCode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Get verification code</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-797382965%2FFunctions%2F253497525" anchor-label="invalidateToken" id="-797382965%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="invalidate-token.html"><span>invalidate</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-797382965%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="invalidate-token.html"><span class="token function">invalidateToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="719472010%2FFunctions%2F253497525" anchor-label="isExpiredAfterMillis" id="719472010%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-expired-after-millis.html"><span>is</span><wbr><span>Expired</span><wbr><span>After</span><wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="719472010%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-expired-after-millis.html"><span class="token function">isExpiredAfterMillis</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1227429836%2FFunctions%2F253497525" anchor-label="isUserExpired" id="-1227429836%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-user-expired.html"><span>is</span><wbr><span>User</span><wbr><span><span>Expired</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1227429836%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-user-expired.html"><span class="token function">isUserExpired</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Is any login user token expired</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="712803184%2FFunctions%2F253497525" anchor-label="isUserLogin" id="712803184%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-user-login.html"><span>is</span><wbr><span>User</span><wbr><span><span>Login</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="712803184%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-user-login.html"><span class="token function">isUserLogin</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Is any current user login</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-522541548%2FFunctions%2F253497525" anchor-label="login" id="-522541548%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login.html"><span><span>login</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522541548%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login.html"><span class="token function">login</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login name user</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1425812098%2FFunctions%2F253497525" anchor-label="login2Fa" id="1425812098%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login2-fa.html"><span><span>login2Fa</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1425812098%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login2-fa.html"><span class="token function">login2Fa</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">mfaOtp<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">mfaCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login name user</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1596166822%2FFunctions%2F253497525" anchor-label="login2FaWithEId" id="1596166822%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login2-fa-with-e-id.html"><span>login2Fa</span><wbr><span>With</span><wbr><span><span>EId</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1596166822%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login2-fa-with-e-id.html"><span class="token function">login2FaWithEId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">mfaOtp<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">mfaCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login 2FA with eId</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1737653165%2FFunctions%2F253497525" anchor-label="loginAnonymous" id="-1737653165%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login-anonymous.html"><span>login</span><wbr><span><span>Anonymous</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1737653165%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login-anonymous.html"><span class="token function">loginAnonymous</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login anonymous</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="259109976%2FFunctions%2F253497525" anchor-label="loginFlow" id="259109976%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login-flow.html"><span>login</span><wbr><span><span>Flow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="259109976%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="login-flow.html"><span class="token function">loginFlow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="577236893%2FFunctions%2F253497525" anchor-label="loginHkmtr" id="577236893%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login-hkmtr.html"><span>login</span><wbr><span><span>Hkmtr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="577236893%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login-hkmtr.html"><span class="token function">loginHkmtr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">staffId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">stationCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">displayName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login hkmtr user</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-561644258%2FFunctions%2F253497525" anchor-label="loginVisitor" id="-561644258%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login-visitor.html"><span>login</span><wbr><span><span>Visitor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561644258%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login-visitor.html"><span class="token function">loginVisitor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">visitorEid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">verificationCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login visitor</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-25465201%2FFunctions%2F253497525" anchor-label="loginWithAuthCode" id="-25465201%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login-with-auth-code.html"><span>login</span><wbr><span>With</span><wbr><span>Auth</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-25465201%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="login-with-auth-code.html"><span class="token function">loginWithAuthCode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">authCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">grantType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cinnox-login-result/index.html">CinnoxLoginResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Login auth code</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="226960228%2FFunctions%2F253497525" anchor-label="logout" id="226960228%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logout.html"><span><span>logout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="226960228%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="logout.html"><span class="token function">logout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reason<span class="token operator">: </span><a href="../-cinnox-authentication-state/index.html">CinnoxAuthenticationState</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Logout current user</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1933313211%2FFunctions%2F253497525" anchor-label="permissionDeny" id="1933313211%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="permission-deny.html"><span>permission</span><wbr><span><span>Deny</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1933313211%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="permission-deny.html"><span class="token function">permissionDeny</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1167718276%2FFunctions%2F253497525" anchor-label="refreshAccessToken" id="-1167718276%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refresh-access-token.html"><span>refresh</span><wbr><span>Access</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1167718276%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="refresh-access-token.html"><span class="token function">refreshAccessToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-563280280%2FFunctions%2F253497525" anchor-label="refreshToken" id="-563280280%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refresh-token.html"><span>refresh</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-563280280%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="refresh-token.html"><span class="token function">refreshToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Refresh current user token due to expired</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1905034129%2FFunctions%2F253497525" anchor-label="registerAuthenticationHandler" id="-1905034129%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-authentication-handler.html"><span>register</span><wbr><span>Authentication</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1905034129%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="register-authentication-handler.html"><span class="token function">registerAuthenticationHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../m800coresdk/com.m800.sdk.core.auth/-m800-authentication-handler/index.html">M800AuthenticationHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1072908235%2FFunctions%2F253497525" anchor-label="registerListener" id="1072908235%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-listener.html"><span>register</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1072908235%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html"><span class="token annotation builtin">Synchronized</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="register-listener.html"><span class="token function">registerListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../m800coresdk/com.m800.sdk.core.auth/-m800-authentication-listener/index.html">M800AuthenticationListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Register login state listener</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="467289729%2FFunctions%2F253497525" anchor-label="requestLicense" id="467289729%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="request-license.html"><span>request</span><wbr><span><span>License</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="467289729%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="request-license.html"><span class="token function">requestLicense</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.m800.sdk.core.internal.network/ApiResponse///PointingToDeclaration/">ApiResponse</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">request license</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1705800075%2FFunctions%2F253497525" anchor-label="resetPassword" id="1705800075%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-password.html"><span>reset</span><wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705800075%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="reset-password.html"><span class="token function">resetPassword</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Reset password</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="996603604%2FFunctions%2F253497525" anchor-label="revokeToken" id="996603604%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="revoke-token.html"><span>revoke</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="996603604%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="revoke-token.html"><span class="token function">revokeToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1352479302%2FFunctions%2F253497525" anchor-label="unbindEIdWindowsAd" id="1352479302%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unbind-e-id-windows-ad.html"><span>unbind</span><wbr><span>EId</span><wbr><span>Windows</span><wbr><span><span>Ad</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1352479302%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unbind-e-id-windows-ad.html"><span class="token function">unbindEIdWindowsAd</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">unBind EId to Windows AD</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="366654088%2FFunctions%2F253497525" anchor-label="unregisterAuthenticationHandler" id="366654088%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unregister-authentication-handler.html"><span>unregister</span><wbr><span>Authentication</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="366654088%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unregister-authentication-handler.html"><span class="token function">unregisterAuthenticationHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../m800coresdk/com.m800.sdk.core.auth/-m800-authentication-handler/index.html">M800AuthenticationHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1991252836%2FFunctions%2F253497525" anchor-label="unregisterListener" id="1991252836%2FFunctions%2F253497525" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800coresdk:dokkaHtmlPartial/release" data-filterable-set=":m800coresdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unregister-listener.html"><span>unregister</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1991252836%2FFunctions%2F253497525"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800coresdk:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html"><span class="token annotation builtin">Synchronized</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unregister-listener.html"><span class="token function">unregisterListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../../m800coresdk/com.m800.sdk.core.auth/-m800-authentication-listener/index.html">M800AuthenticationListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unregister login state listener</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
