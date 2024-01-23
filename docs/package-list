@@ -3,27 +3,6 @@ $dokka.linkExtension:html
 
 module:m800callsdk
 com.m800.sdk.call
-com.m800.sdk.call.internal
-com.m800.sdk.call.internal.api
-com.m800.sdk.call.internal.api.blindtransfercalloptions
-com.m800.sdk.call.internal.api.makecalloptions
-com.m800.sdk.call.internal.api.warmtransfercalloptions
-com.m800.sdk.call.internal.audiocontroller
-com.m800.sdk.call.internal.engine
-com.m800.sdk.call.internal.error
-com.m800.sdk.call.internal.factory
-com.m800.sdk.call.internal.ga
-com.m800.sdk.call.internal.notification
-com.m800.sdk.call.internal.session
-com.m800.sdk.call.internal.session.operationproxy
-com.m800.sdk.call.internal.surfaceview
-com.m800.sdk.call.internal.track
-com.m800.sdk.call.internal.util
-com.m800.sdk.call.internal.util.network
-com.m800.sdk.call.internal.util.sipuri
-com.m800.sdk.call.internal.wrapper
-com.m800.sdk.call.internal.wrapper.callout
-com.m800.sdk.common.eventbus
 module:m800coresdk
 com.m800.sdk.core
 com.m800.sdk.core.auth
