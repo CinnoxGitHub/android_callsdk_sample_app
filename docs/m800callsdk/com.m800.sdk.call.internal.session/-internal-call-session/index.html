@@ -1,0 +1,415 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InternalCallSession</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            M800CallSDK-Android
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":m800callsdk:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="m800callsdk::com.m800.sdk.call.internal.session/InternalCallSession///PointingToDeclaration//-2125854924">
+  <div class="breadcrumbs"><a href="../../index.html">m800callsdk</a><span class="delimiter">/</span><a href="../index.html">com.m800.sdk.call.internal.session</a><span class="delimiter">/</span><span class="current">InternalCallSession</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Internal</span><wbr><span>Call</span><wbr><span><span>Session</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">InternalCallSession</a></div><p class="paragraph">Internal call session defines a set of methods to manipulate private operations of a call session inside call sdk</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-call-session-impl/index.html">CallSessionImpl</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1640314590%2FFunctions%2F-2125854924" anchor-label="getCallEntryService" id="1640314590%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-call-entry-service.html"><span>get</span><wbr><span>Call</span><wbr><span>Entry</span><wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1640314590%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-call-entry-service.html"><span class="token function">getCallEntryService</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1741978948%2FFunctions%2F-2125854924" anchor-label="getGaAudioQuality" id="-1741978948%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-ga-audio-quality.html"><span>get</span><wbr><span>Ga</span><wbr><span>Audio</span><wbr><span><span>Quality</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1741978948%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-ga-audio-quality.html"><span class="token function">getGaAudioQuality</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1448638758%2FFunctions%2F-2125854924" anchor-label="handle3pccEvent" id="-1448638758%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handle3pcc-event.html"><span>handle3pcc</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1448638758%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="handle3pcc-event.html"><span class="token function">handle3pccEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.api/-m800-call-session/-event3pcc/index.html">M800CallSession.Event3pcc</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="232076217%2FFunctions%2F-2125854924" anchor-label="hangup" id="232076217%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hangup.html"><span><span>hangup</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232076217%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="hangup.html"><span class="token function">hangup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reason<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.wrapper/-cinnox-call-result/index.html">CinnoxCallResult</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Hangup the call. If this is an unanswered incoming call, the call will be rejected.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="429290632%2FFunctions%2F-2125854924" anchor-label="initialVideoTrackMapData" id="429290632%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initial-video-track-map-data.html"><span>initial</span><wbr><span>Video</span><wbr><span>Track</span><wbr><span>Map</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="429290632%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="initial-video-track-map-data.html"><span class="token function">initialVideoTrackMapData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ownerEid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">presenterEid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">userInfoList<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.m800.sdk.call.internal.track/-conference-track-controller/-user-info/index.html">ConferenceTrackController.UserInfo</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Initial user video status</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1525231061%2FFunctions%2F-2125854924" anchor-label="isActive" id="1525231061%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-active.html"><span>is</span><wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1525231061%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-active.html"><span class="token function">isActive</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Check if this call session is active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-205102046%2FFunctions%2F-2125854924" anchor-label="isCanceled" id="-205102046%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-canceled.html"><span>is</span><wbr><span><span>Canceled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-205102046%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-canceled.html"><span class="token function">isCanceled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Return true if the call is terminated or destroyed, otherwise, return false</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1676175761%2FFunctions%2F-2125854924" anchor-label="notifyConferenceCallOutReject" id="1676175761%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notify-conference-call-out-reject.html"><span>notify</span><wbr><span>Conference</span><wbr><span>Call</span><wbr><span>Out</span><wbr><span><span>Reject</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1676175761%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="notify-conference-call-out-reject.html"><span class="token function">notifyConferenceCallOutReject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventAction<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.api/-m800-call-session/-m800-call-conference-call-out-reject-event-action/index.html">M800CallSession.M800CallConferenceCallOutRejectEventAction</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-337280875%2FFunctions%2F-2125854924" anchor-label="notifyRecordingError" id="-337280875%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notify-recording-error.html"><span>notify</span><wbr><span>Recording</span><wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337280875%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="notify-recording-error.html"><span class="token function">notifyRecordingError</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">recordingEventAction<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.api/-m800-call-session/-m800-call-recording-event-action/index.html">M800CallSession.M800CallRecordingEventAction</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">notify recording error code</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="500430122%2FFunctions%2F-2125854924" anchor-label="notifyRemoteVideoStatusChanged" id="500430122%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notify-remote-video-status-changed.html"><span>notify</span><wbr><span>Remote</span><wbr><span>Video</span><wbr><span>Status</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="500430122%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="notify-remote-video-status-changed.html"><span class="token function">notifyRemoteVideoStatusChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">notify remote video status changed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-548243598%2FFunctions%2F-2125854924" anchor-label="notifyUserLeave" id="-548243598%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notify-user-leave.html"><span>notify</span><wbr><span>User</span><wbr><span><span>Leave</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-548243598%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="notify-user-leave.html"><span class="token function">notifyUserLeave</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userEid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Notify when user leave this conference</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-428427048%2FFunctions%2F-2125854924" anchor-label="onNetworkConnectionChange" id="-428427048%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-network-connection-change.html"><span>on</span><wbr><span>Network</span><wbr><span>Connection</span><wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-428427048%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-network-connection-change.html"><span class="token function">onNetworkConnectionChange</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">On network connection change</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1935494994%2FFunctions%2F-2125854924" anchor-label="setActive" id="1935494994%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-active.html"><span>set</span><wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1935494994%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-active.html"><span class="token function">setActive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">active<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Mark this session as active/inactive. This is used to detect current (active) session.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1684260896%2FFunctions%2F-2125854924" anchor-label="setGaInfo" id="-1684260896%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ga-info.html"><span>set</span><wbr><span>Ga</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1684260896%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-ga-info.html"><span class="token function">setGaInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">info<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.ga/-call-session-g-a-info/index.html">CallSessionGAInfo</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set GA info, for send ga event.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1207972986%2FFunctions%2F-2125854924" anchor-label="setIceTransportType" id="1207972986%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ice-transport-type.html"><span>set</span><wbr><span>Ice</span><wbr><span>Transport</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1207972986%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-ice-transport-type.html"><span class="token function">setIceTransportType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">iceTransportType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1528995402%2FFunctions%2F-2125854924" anchor-label="setIsForceHeld" id="-1528995402%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-is-force-held.html"><span>set</span><wbr><span>Is</span><wbr><span>Force</span><wbr><span><span>Held</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1528995402%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-is-force-held.html"><span class="token function">setIsForceHeld</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">forceHeld<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set if forced held by native call</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="406890445%2FFunctions%2F-2125854924" anchor-label="setStartRecording" id="406890445%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-start-recording.html"><span>set</span><wbr><span>Start</span><wbr><span><span>Recording</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="406890445%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-start-recording.html"><span class="token function">setStartRecording</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set audio recording start time</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-415219756%2FFunctions%2F-2125854924" anchor-label="swapCallOutCallWrapper" id="-415219756%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="swap-call-out-call-wrapper.html"><span>swap</span><wbr><span>Call</span><wbr><span>Out</span><wbr><span>Call</span><wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-415219756%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="swap-call-out-call-wrapper.html"><span class="token function">swapCallOutCallWrapper</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callWrapper<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.wrapper/-call-wrapper/index.html">CallWrapper</a><span class="token punctuation">, </span></span><span class="parameter ">iceServer<span class="token operator">: </span><span data-unresolved-link="org.webrtc/PeerConnection.IceServer///PointingToDeclaration/">PeerConnection.IceServer</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">callFromType<span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-call-session/-call-from-type/index.html">CinnoxCallSession.CallFromType</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">transmissionMode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Swap CallWrapper instance inside this CallSession</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="932602711%2FFunctions%2F-2125854924" anchor-label="swapConferenceCallWrapper" id="932602711%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="swap-conference-call-wrapper.html"><span>swap</span><wbr><span>Conference</span><wbr><span>Call</span><wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="932602711%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="swap-conference-call-wrapper.html"><span class="token function">swapConferenceCallWrapper</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callWrapper<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.wrapper/-call-wrapper/index.html">CallWrapper</a><span class="token punctuation">, </span></span><span class="parameter ">iceServer<span class="token operator">: </span><span data-unresolved-link="org.webrtc/PeerConnection.IceServer///PointingToDeclaration/">PeerConnection.IceServer</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Swap CallWrapper instance inside this CallSession</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1609954044%2FFunctions%2F-2125854924" anchor-label="swapDirectCallToConferenceCallInfo" id="1609954044%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="swap-direct-call-to-conference-call-info.html"><span>swap</span><wbr><span>Direct</span><wbr><span>Call</span><wbr><span>To</span><wbr><span>Conference</span><wbr><span>Call</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1609954044%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="swap-direct-call-to-conference-call-info.html"><span class="token function">swapDirectCallToConferenceCallInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">roomId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="322355824%2FFunctions%2F-2125854924" anchor-label="swapTransferCallInfo" id="322355824%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="swap-transfer-call-info.html"><span>swap</span><wbr><span>Transfer</span><wbr><span>Call</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="322355824%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="swap-transfer-call-info.html"><span class="token function">swapTransferCallInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">roomId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">newLCC5CallId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">callType<span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-call-session/-call-type/index.html">CinnoxCallSession.CallType</a><span class="token punctuation">, </span></span><span class="parameter ">pstnNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-186726288%2FFunctions%2F-2125854924" anchor-label="switchNetworkChange" id="-186726288%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="switch-network-change.html"><span>switch</span><wbr><span>Network</span><wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-186726288%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="switch-network-change.html"><span class="token function">switchNetworkChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isReachable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Switch network state</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

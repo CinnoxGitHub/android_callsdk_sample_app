@@ -1,0 +1,464 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>M800AudioController</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            M800CallSDK-Android
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":m800callsdk:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="m800callsdk::com.m800.sdk.call.internal.audiocontroller/M800AudioController///PointingToDeclaration//-2125854924">
+  <div class="breadcrumbs"><a href="../../index.html">m800callsdk</a><span class="delimiter">/</span><a href="../index.html">com.m800.sdk.call.internal.audiocontroller</a><span class="delimiter">/</span><span class="current">M800AudioController</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>M800Audio</span><wbr><span><span>Controller</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">M800AudioController</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">m800Context<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">ringtoneController<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.api/-ringtone-controller/index.html">RingtoneController</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="../../com.m800.sdk.call.internal.api/-audio-controller/index.html">AudioController</a>, <a href="https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener.html">AudioManager.OnAudioFocusChangeListener</a></div><p class="paragraph">M800AudioController</p><p class="paragraph">BT behavior</p><ol><li><p class="paragraph">onCallSessionCreated / onCallSessionDestroyed     As name, should be called with call session created / destroyed,     Should not start SCO mode and keep AudioManager mode in ringtone</p><p class="paragraph"> Only listen BT broadcast receiver event in call session active time</p></li><li><p class="paragraph">onMediaEngineReady     Call when in talking state, will start SCO mode and change AudioManager     mode to in_communication</p></li><li><p class="paragraph">Auto enable SCO when BT headset connected.     Only check after media engine ready.</p></li></ol></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1563593887%2FConstructors%2F-2125854924" anchor-label="M800AudioController" id="-1563593887%2FConstructors%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m800-audio-controller.html"><span>M800Audio</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1563593887%2FConstructors%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">m800Context<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">ringtoneController<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.api/-ringtone-controller/index.html">RingtoneController</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="978654294%2FFunctions%2F-2125854924" anchor-label="checkBluetoothScoConnection" id="978654294%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-bluetooth-sco-connection.html"><span>check</span><wbr><span>Bluetooth</span><wbr><span>Sco</span><wbr><span><span>Connection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978654294%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="check-bluetooth-sco-connection.html"><span class="token function">checkBluetoothScoConnection</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1375436897%2FFunctions%2F-2125854924" anchor-label="getCurrentBluetoothDeviceName" id="1375436897%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-bluetooth-device-name.html"><span>get</span><wbr><span>Current</span><wbr><span>Bluetooth</span><wbr><span>Device</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1375436897%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-current-bluetooth-device-name.html"><span class="token function">getCurrentBluetoothDeviceName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get current bluetooth Device name</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="757086026%2FFunctions%2F-2125854924" anchor-label="getCurrentRouting" id="757086026%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-routing.html"><span>get</span><wbr><span>Current</span><wbr><span><span>Routing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="757086026%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-current-routing.html"><span class="token function">getCurrentRouting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-audio-controller/-route/index.html">CinnoxAudioController.Route</a></div><div class="brief "><p class="paragraph">Get the current audio routing</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-43707393%2FFunctions%2F-2125854924" anchor-label="getRoutingList" id="-43707393%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-routing-list.html"><span>get</span><wbr><span>Routing</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-43707393%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-routing-list.html"><span class="token function">getRoutingList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.m800.sdk.call/-cinnox-audio-controller/-route/index.html">CinnoxAudioController.Route</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Return routing audio list.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="686534613%2FFunctions%2F-2125854924" anchor-label="getSelectedRoute" id="686534613%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-selected-route.html"><span>get</span><wbr><span>Selected</span><wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="686534613%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-selected-route.html"><span class="token function">getSelectedRoute</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-audio-controller/-route/index.html">CinnoxAudioController.Route</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get selected route</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1640958105%2FFunctions%2F-2125854924" anchor-label="internalSetSpeakerOn" id="1640958105%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="internal-set-speaker-on.html"><span>internal</span><wbr><span>Set</span><wbr><span>Speaker</span><wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1640958105%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="internal-set-speaker-on.html"><span class="token function">internalSetSpeakerOn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1826204354%2FFunctions%2F-2125854924" anchor-label="isBluetoothHeadSetConnected" id="1826204354%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-bluetooth-head-set-connected.html"><span>is</span><wbr><span>Bluetooth</span><wbr><span>Head</span><wbr><span>Set</span><wbr><span><span>Connected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1826204354%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-bluetooth-head-set-connected.html"><span class="token function">isBluetoothHeadSetConnected</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get bluetooth headset connection status.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1121438387%2FFunctions%2F-2125854924" anchor-label="isBluetoothScoOn" id="1121438387%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-bluetooth-sco-on.html"><span>is</span><wbr><span>Bluetooth</span><wbr><span>Sco</span><wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1121438387%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-bluetooth-sco-on.html"><span class="token function">isBluetoothScoOn</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Is AudioManager bluetooth sco enabled for voice call</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1328494777%2FFunctions%2F-2125854924" anchor-label="isPlayingRingtone" id="-1328494777%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-playing-ringtone.html"><span>is</span><wbr><span>Playing</span><wbr><span><span>Ringtone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1328494777%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-playing-ringtone.html"><span class="token function">isPlayingRingtone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Check if there is a ringtone playing.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1245723193%2FFunctions%2F-2125854924" anchor-label="isSpeakerOn" id="1245723193%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-speaker-on.html"><span>is</span><wbr><span>Speaker</span><wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1245723193%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-speaker-on.html"><span class="token function">isSpeakerOn</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns whether the phone speaker is on.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1036412655%2FFunctions%2F-2125854924" anchor-label="isWiredHeadSetConnected" id="-1036412655%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-wired-head-set-connected.html"><span>is</span><wbr><span>Wired</span><wbr><span>Head</span><wbr><span>Set</span><wbr><span><span>Connected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1036412655%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-wired-head-set-connected.html"><span class="token function">isWiredHeadSetConnected</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Get wired headset connection status.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1228079014%2FFunctions%2F-2125854924" anchor-label="onAudioFocusChange" id="-1228079014%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-audio-focus-change.html"><span>on</span><wbr><span>Audio</span><wbr><span>Focus</span><wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1228079014%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-audio-focus-change.html"><span class="token function">onAudioFocusChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">focusChange<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-384903490%2FFunctions%2F-2125854924" anchor-label="onCallSessionCreated" id="-384903490%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-call-session-created.html"><span>on</span><wbr><span>Call</span><wbr><span>Session</span><wbr><span><span>Created</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-384903490%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-call-session-created.html"><span class="token function">onCallSessionCreated</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2081492371%2FFunctions%2F-2125854924" anchor-label="onCallSessionDestroyed" id="-2081492371%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-call-session-destroyed.html"><span>on</span><wbr><span>Call</span><wbr><span>Session</span><wbr><span><span>Destroyed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2081492371%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-call-session-destroyed.html"><span class="token function">onCallSessionDestroyed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when call session destroyed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-485513808%2FFunctions%2F-2125854924" anchor-label="onCallSessionTalking" id="-485513808%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-call-session-talking.html"><span>on</span><wbr><span>Call</span><wbr><span>Session</span><wbr><span><span>Talking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-485513808%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-call-session-talking.html"><span class="token function">onCallSessionTalking</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when call sesssion in talking</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-801456547%2FFunctions%2F-2125854924" anchor-label="playRingtone" id="-801456547%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play-ringtone.html"><span>play</span><wbr><span><span>Ringtone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-801456547%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="play-ringtone.html"><span class="token function">playRingtone</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../../com.m800.sdk.call.internal.api/-cinnox-ringtone-type/index.html">CinnoxRingtoneType</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../../m800coresdk/com.m800.sdk.core/-cinnox-api-result-callback/index.html">CinnoxApiResultCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">audioFilePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Play the audio file</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1156249778%2FFunctions%2F-2125854924" anchor-label="registerAudioControllerListener" id="1156249778%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-audio-controller-listener.html"><span>register</span><wbr><span>Audio</span><wbr><span>Controller</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1156249778%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="register-audio-controller-listener.html"><span class="token function">registerAudioControllerListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-audio-controller/-cinnox-audio-controller-listener/index.html">CinnoxAudioController.CinnoxAudioControllerListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Register listener for audio route status</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1709667741%2FFunctions%2F-2125854924" anchor-label="setBluetoothEnabled" id="1709667741%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-bluetooth-enabled.html"><span>set</span><wbr><span>Bluetooth</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1709667741%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-bluetooth-enabled.html"><span class="token function">setBluetoothEnabled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set bluetooth enabled/disabled for voice call</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="100700123%2FFunctions%2F-2125854924" anchor-label="setCommunicationMode" id="100700123%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-communication-mode.html"><span>set</span><wbr><span>Communication</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="100700123%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-communication-mode.html"><span class="token function">setCommunicationMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1063087932%2FFunctions%2F-2125854924" anchor-label="setDefaultSetting" id="1063087932%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-default-setting.html"><span>set</span><wbr><span>Default</span><wbr><span><span>Setting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063087932%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-default-setting.html"><span class="token function">setDefaultSetting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Reset to default setting</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1833623914%2FFunctions%2F-2125854924" anchor-label="setSpeakerOn" id="-1833623914%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-speaker-on.html"><span>set</span><wbr><span>Speaker</span><wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1833623914%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-speaker-on.html"><span class="token function">setSpeakerOn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set speaker ON or OFF.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1360366665%2FFunctions%2F-2125854924" anchor-label="stopRingtone" id="1360366665%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-ringtone.html"><span>stop</span><wbr><span><span>Ringtone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1360366665%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="stop-ringtone.html"><span class="token function">stopRingtone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-call-sdk-exception/index.html">CinnoxCallSdkException</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Stop the playing audio</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-555050057%2FFunctions%2F-2125854924" anchor-label="switchToRoute" id="-555050057%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="switch-to-route.html"><span>switch</span><wbr><span>To</span><wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-555050057%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="switch-to-route.html"><span class="token function">switchToRoute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">toRoute<span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-audio-controller/-route/index.html">CinnoxAudioController.Route</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Switch audio to specific routing.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1859423047%2FFunctions%2F-2125854924" anchor-label="unregisterAudioControllerListener" id="-1859423047%2FFunctions%2F-2125854924" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtmlPartial/release" data-filterable-set=":m800callsdk:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unregister-audio-controller-listener.html"><span>unregister</span><wbr><span>Audio</span><wbr><span>Controller</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1859423047%2FFunctions%2F-2125854924"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":m800callsdk:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unregister-audio-controller-listener.html"><span class="token function">unregisterAudioControllerListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.m800.sdk.call/-cinnox-audio-controller/-cinnox-audio-controller-listener/index.html">CinnoxAudioController.CinnoxAudioControllerListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove registered listener</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
